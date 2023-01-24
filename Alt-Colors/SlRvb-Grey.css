@@ -1,0 +1,105 @@
+
+.dark-theme, html[data-theme=dark]{ 
+
+    --outer-bar: #0E0F15;
+    --dark-sidebar: #090C0E;
+    --side-bar: var(--note);
+    --note: #171B21;
+    --bg: #252c36;
+    
+    --f-icon: #586277;
+    --folder: #F1F7FF;
+
+    --headers: #9DB1CA;
+    --text: #AAB3CA;
+    --soft-text: #778495;
+    --text-dl: #e5ebee;
+    
+    --code-text: #707a90;
+    --code-bg: #232831;
+
+    --i-at: #5D7B98;
+    --footnote: #576571;
+    --inactive: #5e6f8f;
+    --tag: #353d52;
+
+    --hr: #414a5f;
+    --lines: #2c333a;
+    
+    --embed-bg: #181c22;
+    --aside-bg: #12151d;
+    --accent: #515b71;
+    --lite-accent: #8e9ab4;
+    --accent2: #889FC3;
+    --accent2-lite: #79a6cf;
+    --dark-accent: #333A49;
+    --deep-dark-accent: #222731;
+
+    --table: #242b3d;
+    --td: #06080c60;
+    --outline: #111418;
+
+    --scrollbar-bg: #252c36;
+    --scrollbar-fg: #515b71;
+    
+    --graph-lines: #323946;
+    --highlight: rgba(92, 110, 133, 0.25);
+    --ph-highlight-color-blue: var(--highlight);
+
+
+    --bttn: var(--dark-accent);
+}
+
+.light-theme, html[data-theme=light]{ 
+    
+    --color-level-2: var(--embed-bg);
+    --color-level-3: #1a1e24;
+
+    --outer-bar: #eef3fd;
+    --dark-sidebar:    #f1f5ff;
+    --side-bar: var(--note);
+    --note: #f8fbff;
+    --bg: #e1e9f6;
+
+    
+    --f-icon: #A6B4CC;
+    --folder: #99accf;
+
+    --headers: #6e7a92;
+    --text: #697580;
+    --soft-text: #90a0c3;
+    --text-dl: #e5ebee;
+    
+    --code-text: #707a90;
+    --code-bg: var(--dark-sidebar);
+
+    --i-at: #8FAABE;
+    --footnote: #576571;
+    --inactive: #96a5be;
+    --tag: #7485a3;
+
+    --hr: #d6deea;
+    --lines: var(--hr);
+    
+    --embed-bg: var(--dark-sidebar);
+    --aside-bg: var(--dark-sidebar);
+    --accent: #aebdd4;
+    --lite-accent: #8e9ab4;
+    --accent2: #889FC3;
+    --accent2-lite: #000000;
+    --dark-accent: #dbe4f8;
+    --deep-dark-accent: #222731;
+
+    --table: #ccd6eb;
+    --td: #d0ddef62;
+    --outline: var(--bg);
+    
+    --scrollbar-bg: var(--table);
+    --scrollbar-fg: var(--accent);
+
+    --graph-lines: var(--table);
+    --highlight: rgba(163, 188, 218, 0.22);
+    --ph-highlight-color-blue: var(--highlight);
+
+    --bttn: var(--dark-accent);
+}
