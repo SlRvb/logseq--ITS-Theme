@@ -1,0 +1,84 @@
+
+/* Alt Tags */
+a.tag:is(
+  [data-ref="Q" i], [data-ref="Question" i],
+  [data-ref="R" i], [data-ref="Research" i],
+  [data-ref="P" i], [data-ref="Pro" i],
+  [data-ref="C" i], [data-ref="Con" i],
+  [data-ref="i" i], [data-ref="idea" i],
+  [data-ref="B" i], [data-ref="Brainstorm" i],
+  [data-ref="D" i], [data-ref="Dialogue" i],
+  [data-ref="A" i], [data-ref="Answer" i],
+  [data-ref="Plot" i]
+)
+{ font-size: 0.1px; }
+a.tag.tag[data-ref]::before { 
+    font-family: "its"; 
+    visibility: visible;
+    font-size: 15px;
+
+    width: 16px;
+    text-align: center;
+    display: inline-block;
+}
+
+a.tag:is(
+    [data-ref="Question" i], 
+    [data-ref="Q" i]
+)::before {
+  content: '\EC05';
+  color: #fdaf00;
+}
+a.tag:is(
+    [data-ref="Research" i], 
+    [data-ref="R" i]
+)::before {
+  content: '\EC07';
+  color: #9fbadf;
+}
+a.tag:is(
+    [data-ref="Pro" i], 
+    [data-ref="P" i]
+)::before {
+  content: '\EC11';
+  color: #4fa54f;
+}
+a.tag:is(
+    [data-ref="Con" i], 
+    [data-ref="C" i]
+)::before {
+  content: '\EC12';
+  color: #cf4343;
+}
+a.tag:is(
+    [data-ref="idea" i], 
+    [data-ref="i" i]
+)::before {
+  content: '\EC09';
+  color: #f9be7b;
+}
+a.tag:is(
+    [data-ref="Brainstorm" i], 
+    [data-ref="B" i]
+)::before {
+  content: '\EC10';
+  color: #b676ff;
+}
+a.tag:is(
+    [data-ref="Dialogue" i], 
+    [data-ref="D" i]
+)::before {
+  content: '\EC13';
+  color: #cad3eb;
+}
+a.tag:is(
+    [data-ref="Answer" i], 
+    [data-ref="A" i]
+)::before {
+  content: '\EC20';
+  color: #16c60c;
+}
+a.tag[data-ref="Plot" i]::before {
+  content: '\e805';
+  color: #c14343;
+}
