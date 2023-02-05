@@ -70,7 +70,8 @@
     --ls-border-radius-low: 0;
     --ls-border-radius-medium: 0;
 
-    --color-level-2: #11151d;
+    /* --color-level-2: #11151d; */
+    --color-level-2: var(--td);
     --color-level-3: #1a1e24;
 }
 
@@ -103,7 +104,7 @@
 .ls-block :is(h1,h2,h3,h4,h5,h6)
 {
     font-family: var(--ls-heading-font-family);
-    margin: 0;
+    padding: 0;
     margin-block-start: 0;
     display: flex;
     align-items: center;
@@ -229,8 +230,10 @@ a:hover>.bullet-container .bullet {
 /* .block-control-wrap { height: unset; } */
 
 /* New line Button */
-.add-button-link-wrap:hover .add-button-link { opacity: 1; }
+.add-button-link-wrap:hover .add-button-link 
+{ opacity: 1; }
 
+.add-button-link-wrap .block { margin-left: 0 !important; }
 
 
 /* Checkbox */
@@ -254,6 +257,10 @@ a.button:hover {
     background-color: var(--bttn);
     box-shadow: 2px 2px 0 var(--outline);
 }
+html[data-theme=light] .cp__header a:hover, 
+html[data-theme=light] a.right-sidebar-button:hover,
+button.button:hover,
+.cp__header button:hover,
 .button:not(:hover) .ti {
     color: var(--inactive);
 }
@@ -270,10 +277,13 @@ table {
     word-break: normal;
 }
 
+/* UI Notif */
 .ui__notifications .notification-area div {
     overflow: auto !important;
 }
-
+.ui__notifications .notification-area {
+    --ls-primary-text-color: var(--text-dl);
+}
 
 /* Box Shadow */
 .tippy-popper .tippy-tooltip-content,
@@ -305,6 +315,9 @@ table {
     opacity: 1;
     color: var(--footnote);
 }
+.cp__sidebar-left-layout a:hover {
+    color: var(--text-dl);
+}
 
 .flashcards-nav { display: none; }
 
@@ -334,6 +347,9 @@ table {
     margin: 0;
     transition: background-color 15ms;
 }
+.left-sidebar-inner .nav-content-item .header:hover a {
+    color: var(--text-dl);
+}
 .favorite-item { margin: 0; }
 .left-sidebar-inner .nav-content-item .bd { background-color: var(--td); }
 .left-sidebar-inner .page-icon { 
@@ -359,6 +375,10 @@ table {
     color: var(--inactive); 
 }
 nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
+
+
+
+/* Header */
 
 
 
@@ -399,6 +419,9 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
 }
 .inline .embed.embed-page {
     margin: 0;
+}
+.color-level.embed-block {
+    border: 1px solid var(--table);
 }
 
 div.content div div.sm\:px-7 {
