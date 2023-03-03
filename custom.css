@@ -60,6 +60,7 @@
 
     --ls-block-highlight-color: var(--highlight);
     --ls-selection-background-color: var(--accent);
+    --ls-selection-background-color: var(--highlight);
 
     --ls-border-color: var(--hr);
     --ls-secondary-border-color: var(--table);
@@ -180,6 +181,7 @@ a.button,
 
 
 
+.cp__header { background-color: var(--outer-bar); }
 
 /*Code blocks*/
 .page-properties {
@@ -238,6 +240,7 @@ a:hover>.bullet-container .bullet {
 
 /* Checkbox */
 .form-checkbox { border: 1px solid var(--accent); border-radius: 0; }
+.form-checkbox:checked:focus,
 .form-checkbox:checked { background-color: var(--accent); }
 .canceled, .cancelled, .done { 
     color: var(--inactive);
