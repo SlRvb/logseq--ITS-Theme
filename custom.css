@@ -393,7 +393,7 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
 }
 
 /* Breadcrumb Arrow */
-.breadcrumb > span { 
+/* .breadcrumb > span { 
     color: transparent;
     opacity: 1;
 }
@@ -404,7 +404,7 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
 
     margin-right: -20px;
     margin-left: -2px;
-}
+} */
 
 
 /* Embed */
