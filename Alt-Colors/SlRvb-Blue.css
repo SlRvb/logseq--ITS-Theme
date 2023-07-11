@@ -1,0 +1,105 @@
+
+.dark-theme, html[data-theme=dark]{ 
+
+    --outer-bar: #0e0f15;
+    --dark-sidebar: #10161d;
+    --side-bar: #0e0f15;
+    --note: #1a1e24;
+    --bg: ;
+    
+    --f-icon: ;
+    --folder: ;
+
+    --headers: #2b71cd;
+    --text: #AAB3CA;
+    --soft-text: #6d7a9b;
+    --text-dl: #dde4ef;
+    
+    --code-text: slategray;
+    --code-bg: #232831;
+
+    --i-at: #5d7b98;
+    --footnote: #6e7e89;
+    --inactive: ;
+    --tag: var(--dark-accent);
+
+    --hr: #3c5274;
+    --lines: #465164;
+    
+    --embed-bg: #030a14;
+    --aside-bg: #030a14;
+    --accent: #394d64;
+    --lite-accent: #6ca6e0;
+    --accent2: #4c78cc;
+    --accent2-lite: #4c87cc;
+    --dark-accent: #293e64;
+    --deep-dark-accent: #1f283b;
+
+    --table: #283345;
+    --td: ;
+    --outline: var(--outer-bar);
+
+    --scrollbar-bg: ;
+    --scrollbar-fg: ;
+    
+    --graph-lines: ;
+    --highlight: ;
+    --ph-highlight-color-blue: ;
+
+
+    --bttn: ;
+}
+
+.light-theme, html[data-theme=light]{ 
+    
+    --color-level-2: ;
+    --color-level-3: ;
+
+    --outer-bar: ;
+    --dark-sidebar: ;
+    --side-bar: ;
+    --note: ;
+    --bg: ;
+
+    
+    --f-icon: ;
+    --folder: ;
+
+    --headers: ;
+    --text: ;
+    --soft-text: ;
+    --text-dl: ;
+    
+    --code-text: ;
+    --code-bg: ;
+
+    --i-at: ;
+    --footnote: ;
+    --inactive: ;
+    --tag: ;
+
+    --hr: ;
+    --lines: ;
+    
+    --embed-bg: ;
+    --aside-bg: ;
+    --accent: ;
+    --lite-accent: ;
+    --accent2: ;
+    --accent2-lite: ;
+    --dark-accent: ;
+    --deep-dark-accent: ;
+
+    --table: ;
+    --td: ;
+    --outline: ;
+    
+    --scrollbar-bg: ;
+    --scrollbar-fg: ;
+
+    --graph-lines: ;
+    --highlight: ;
+    --ph-highlight-color-blue: ;
+
+    --bttn: ;
+}

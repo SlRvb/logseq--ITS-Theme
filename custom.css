@@ -165,6 +165,7 @@ a.button,
 .ui__icon,
 
 .dropdown-wrapper,
+.left-sidebar-inner .create #create-button,
 
 .cp__settings-inner .theme-modes-options>li>i,
 .cp__settings-inner>aside ul>li,
@@ -267,7 +268,6 @@ button.button:hover,
 .button:not(:hover) .ti {
     color: var(--inactive);
 }
-
 
 
 /* Table */
