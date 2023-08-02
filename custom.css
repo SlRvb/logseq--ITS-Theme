@@ -50,6 +50,7 @@
     --ls-active-primary-color: var(--f-icon);
     --ls-active-secondar-color: var(--folder);
     --ls-tag-text-hover-color: var(--accent2-lite);
+    --ls-button-icon-hover-color: var(--text-dl);
 
     --ls-block-bullet-border-color: var(--highlight);
     --ls-block-bullet-color: var(--accent);
@@ -169,9 +170,12 @@ a.button,
 
 .cp__settings-inner .theme-modes-options>li>i,
 .cp__settings-inner>aside ul>li,
+.cp__settings-main .settings-menu-item.settings-menu-item,
 .keyboard-shortcut>code,
 .form-select,
-.form-input
+.form-input,
+
+.page-reference
 { border-radius: 0; }
 
 /* Settings */
@@ -181,8 +185,8 @@ a.button,
 } */
 
 
-
 .cp__header { background-color: var(--outer-bar); }
+.cp__settings-main .settings-menu-item:hover { background-color: var(--td); }
 
 /*Code blocks*/
 .page-properties {
@@ -215,17 +219,13 @@ a.button,
     padding: 0;
     padding-bottom: 1px;
 }
-.bullet-container {
-    transform: rotate(45deg);
-}
+.bullet-container { transform: rotate(45deg); }
 .bullet-container .bullet {
     border-radius: 0;
     width: 7px;
     height: 7px;
 }
-a:hover>.bullet-container .bullet {
-    transform: rotate(180deg);    
-}
+/* a:hover>.bullet-container .bullet { transform: rotate(180deg); } */
 .bullet-closed { transform: rotate(0deg); }
 
 /* .ls-block > div { align-items: center; } */
@@ -254,20 +254,22 @@ a:hover>.bullet-container .bullet {
 a.button {
     padding: .3rem .5rem;
 }
-a.button:hover {
-    color: var(--text-dl);
-}
+a.button:hover,
+.cp__header button:hover 
+{ color: var(--ls-button-icon-hover-color); }
+
 .ui__button.ui__button {
+    color: var(--ls-button-icon-hover-color);
     background-color: var(--bttn);
     box-shadow: 2px 2px 0 var(--outline);
 }
-html[data-theme=light] .cp__header a:hover, 
+/* html[data-theme=light] .cp__header a:hover, 
 html[data-theme=light] a.right-sidebar-button:hover,
 button.button:hover,
 .cp__header button:hover,
 .button:not(:hover) .ti {
     color: var(--inactive);
-}
+} */
 
 
 /* Table */
