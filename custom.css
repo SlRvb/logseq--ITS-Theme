@@ -225,8 +225,8 @@ a.button,
     width: 7px;
     height: 7px;
 }
+.bullet-closed { transform: unset; }
 /* a:hover>.bullet-container .bullet { transform: rotate(180deg); } */
-.bullet-closed { transform: rotate(0deg); }
 
 /* .ls-block > div { align-items: center; } */
 
