@@ -1,0 +1,11 @@
+/* Hide Root Bullet for Zoomed Block*/
+:is(.sidebar-item.item-type-block, .page-blocks-inner) .blocks-container > div > div > .ls-block:not([level], [data-collapsed^="{"]) > .block-main-container:not(:hover) > div > a > .bullet-container { 
+  display: none; 
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+:is(.sidebar-item.item-type-block, .page-blocks-inner) .blocks-container > div > div > .ls-block:not([level], [data-collapsed^="{"]) > .block-main-container:not(:hover) > div { padding-right: 0; }
+
+/* Hide Root List Line */
+:is(.sidebar-item.item-type-block, .page-blocks-inner) .blocks-container > div > div > .ls-block:not([level], [data-collapsed^="{"]) > .block-main-container:not(:hover) + .block-children-container { margin-left: 0; }
+:is(.sidebar-item.item-type-block, .page-blocks-inner) .blocks-container > div > div > .ls-block:not([level], [data-collapsed^="{"]) > .block-main-container:not(:hover) + .block-children-container > .block-children { border: none; }
+
