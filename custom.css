@@ -329,6 +329,7 @@ table {
 .cp__right-sidebar .page-hierarchy 
 { margin: 0 10px; }
 
+.sidebar-item.collapsed.item-type-block .sidebar-item-header,
 .sidebar-item.content.color-level {
     background-color: var(--note);
     box-shadow: 3px 3px 0 var(--outline);
