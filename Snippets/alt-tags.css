@@ -68,7 +68,7 @@ a.tag:is(
     [data-ref="Dialogue" i], 
     [data-ref="D" i]
 )::before {
-  content: '\EC13';
+  content: '\EC27';
   color: #cad3eb;
 }
 a.tag:is(
