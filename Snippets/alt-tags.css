@@ -9,7 +9,8 @@ a.tag:is(
   [data-ref="B" i], [data-ref="Brainstorm" i],
   [data-ref="D" i], [data-ref="Dialogue" i],
   [data-ref="A" i], [data-ref="Answer" i],
-  [data-ref="Plot" i]
+  [data-ref="Plot" i],
+  [data-ref="Quote" i]
 )
 { font-size: 0.1px; }
 a.tag.tag[data-ref]::before { 
@@ -81,4 +82,10 @@ a.tag:is(
 a.tag[data-ref="Plot" i]::before {
   content: '\e805';
   color: #c14343;
+}
+a.tag:is(
+    [data-ref="Quote" i]
+)::before {
+  content: '\EC13';
+  color: #cad3eb;
 }
