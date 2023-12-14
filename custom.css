@@ -39,6 +39,7 @@
 
     --ls-title-text-color: var(--headers);
     --ls-primary-text-color: var(--text);
+    --ls-secondary-text-color: var(--text);
     
     --ls-link-ref-text-color: var(--accent2-lite);
     --ls-link-ref-text-hover-color: var(--lite-accent);
@@ -76,6 +77,7 @@
     --color-level-1: var(--code-bg);
     --color-level-2: var(--td);
     --color-level-3: #1a1e24;
+    --color-level-4: #11151d;
 }
 
 
@@ -295,7 +297,7 @@ table {
 
 /* UI Notif */
 .ui__notifications .notification-area div {
-    overflow: auto !important;
+    overflow-y: auto !important;
 }
 .ui__notifications .notification-area {
     --ls-primary-text-color: var(--text-dl);
@@ -439,10 +441,12 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
     border: 2px solid var(--outline);
     box-shadow: 2px 2px var(--outline);
 }
-.references-blocks .color-level {
+.references-blocks .references-blocks-item {
     background-color: var(--code-bg);
     border: 2px solid var(--outline);
-    box-shadow: 2px 2px var(--outline);
+    box-shadow: 3px 3px var(--outline);
+    border-radius: 0;
+    padding: .5em .2em;
 }
 .references h2.font-medium {
     font-weight: 600;
