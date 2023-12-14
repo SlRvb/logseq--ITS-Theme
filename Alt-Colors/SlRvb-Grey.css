@@ -44,7 +44,7 @@
     
     --graph-lines: #323946;
     --highlight: rgba(92, 110, 133, 0.25);
-    --ph-highlight-color-blue: var(--highlight);
+    /* --ph-highlight-color-blue: var(--highlight); */
 
 
     --bttn: var(--dark-accent);
@@ -98,7 +98,7 @@
 
     --graph-lines: var(--table);
     --highlight: rgba(163, 188, 218, 0.22);
-    --ph-highlight-color-blue: var(--highlight);
+    /* --ph-highlight-color-blue: var(--highlight); */
 
     --bttn: var(--deep-dark-accent);
 }
