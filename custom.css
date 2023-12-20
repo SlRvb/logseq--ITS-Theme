@@ -416,9 +416,7 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
 /* Reduce Breadcrumb Margins */
 .breadcrumb.block-parents { margin: 0; }
 .cp__right-sidebar .sidebar-item.content .mt-1 { margin: 0; }
-.cp__right-sidebar .rotating-arrow {
-    margin-top: 2px;
-}
+.cp__right-sidebar .rotating-arrow { margin-top: 2px; }
 
 /* Breadcrumb Arrow */
 /* .breadcrumb > span { 
@@ -446,27 +444,20 @@ nav.cp__menubar-repos .ui__dropdown-trigger a { justify-content: center; }
     border: 2px solid var(--outline);
     box-shadow: 3px 3px var(--outline);
     border-radius: 0;
-    padding: .5em .2em;
+    padding: .5em .7em;
 }
-.references h2.font-medium {
-    font-weight: 600;
-}
-.inline .embed.embed-page {
-    margin: 0;
-}
-.color-level.embed-block {
-    border: 1px solid var(--table);
-}
+.references h2.font-medium { font-weight: 600; }
+.references-blocks-wrap .foldable-title { margin-left: 0; }
+.inline .embed.embed-page { margin: 0; }
 
-div.content div div.sm\:px-7 {
-    padding: 5px 10px;
-}
+.color-level.embed-block { border: 1px solid var(--table); }
+
+div.content div div.sm\:px-7 { padding: 5px 10px; }
 
 .embed-block > div {
     padding-left: 0;
     margin-left: -12px;
 }
-
 
 /* Highlight */
 mark {
