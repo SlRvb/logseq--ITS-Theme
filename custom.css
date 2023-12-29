@@ -189,6 +189,7 @@ a.button,
 .form-select,
 .form-input,
 
+.custom-query-page-result,
 .page-reference
 { border-radius: 0; }
 
@@ -664,8 +665,12 @@ hr {
 /* Query */
 .initial div div.mt-2,
 .custom-query { margin-top: 0; }
-
-
+.custom-query .color-level.color-level {
+    border: 0 solid var(--outline);
+    box-shadow: 
+      4px 4px 0 var(--outline),
+      0 0 0 3px var(--outline);
+  }
 
 
 
