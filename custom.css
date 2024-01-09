@@ -327,8 +327,8 @@ table {
 
 
 /* UI Notif */
-.ui__notifications .notification-area div {
-    overflow-y: auto !important;
+.ui__notifications .notification-area .ui__button {
+    box-shadow: none;
 }
 .ui__notifications .notification-area {
     --ls-primary-text-color: var(--text-dl);
