@@ -1,5 +1,10 @@
-:root {
-    --ph-highlight-color-red: red;
+:root,
+.dark-theme,
+.light-theme
+{
+    --ls-highlight-color-blue: #245194;
+    --ls-highlight-color-green: #577e57;
+    --ls-highlight-color-red: #a73636;
     
     --ls-font-family: 'Atkinson Hyperlegible';
     --ls-heading-font-family: "Norwester Pro", "Inter";
@@ -12,6 +17,10 @@
     --ls-page-title-weight: 500;
     --ls-page-title-font-family: "Norwester Pro", "Inter";
 
+    
+    --ls-border-radius-low: 0;
+    --ls-border-radius-medium: 0;
+    --radius: 0;
     
     --ls-left-sidebar-width: 210px;
 }
@@ -57,6 +66,7 @@
     --ls-block-bullet-color: var(--accent);
     --ls-page-checkbox-color: var(--note);
     --ls-page-checkbox-border-color: var(--lines);
+    --ls-page-checkbox-checked-color: var(--accent);
 
     --ls-quaternary-background-color: var(--table);
 
@@ -69,15 +79,14 @@
     --ls-guideline-color: var(--lines);
 
     --ls-table-tr-even-background-color: var(--td);
-    
-    --ls-border-radius-low: 0;
-    --ls-border-radius-medium: 0;
 
     /* --color-level-2: #11151d; */
     --color-level-1: var(--code-bg);
     --color-level-2: var(--td);
     --color-level-3: #1a1e24;
     --color-level-4: #11151d;
+
+
 }
 
 
@@ -101,7 +110,7 @@
 .block-parents a.page-ref {
     --ls-primary-text-color: var(--accent2-lite);
 }
-.title.ls-page-title { font-size: 16px; }
+.title.ls-page-title { font-size: var(--ls-page-title-size); }
 .page-icon + .page-title-sizer-wrapper { width: unset; }
 .title .page-icon { margin-right: 0; }
 
@@ -189,9 +198,11 @@ a.button,
 .form-select,
 .form-input,
 
+.tl-logseq-cp-container-bg,
+
 .custom-query-page-result,
 .page-reference
-{ border-radius: 0; }
+{ border-radius: var(--radius); }
 
 
 
@@ -272,9 +283,9 @@ a.button,
 
 
 /* Checkbox */
-.form-checkbox { border: 1px solid var(--accent); border-radius: 0; }
+.form-checkbox { border: 1px solid var(--ls-page-blockquote-border-color); border-radius: 0; }
 .form-checkbox:checked:focus,
-.form-checkbox:checked { background-color: var(--accent); }
+.form-checkbox:checked { background-color: var(--ls-page-checkbox-checked-color); }
 .canceled, .cancelled, .done { 
     color: var(--inactive);
     text-decoration-thickness: 3px;
@@ -687,3 +698,6 @@ iframe { margin-top: 0; }
   font-size: 14px;
   box-shadow: 0 2px 0 var(--outline);
 }
+
+
+/* Whiteboard */

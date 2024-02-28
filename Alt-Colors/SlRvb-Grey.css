@@ -1,6 +1,5 @@
 
 .dark-theme, html[data-theme=dark]{ 
-
     --outer-bar: #0E0F15;
     --dark-sidebar: #090C0E;
     --side-bar: var(--note);
